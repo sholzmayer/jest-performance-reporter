@@ -15,7 +15,9 @@ jobs:
           node-version: 16
       - run: yarn
       - run: yarn build
-      - run: npm publish packages/core
+      - name: Publish
+        working-directory: ./packages/core
+        run: npm publish
       - uses: JS-DevTools/npm-publish@v1
         with:
           token: ${{ secrets.NPM_TOKEN }}
