@@ -13,7 +13,8 @@
     "style"
   ],
   "scripts": {
-    "build": "lerna run build --scope @jest-performance-reporter/core"
+    "build": "lerna run build --scope @jest-performance-reporter/core",
+    "release": "lerna publish patch"
   },
   "author": "Simon Holzmayer",
   "license": "MIT",

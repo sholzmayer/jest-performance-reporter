@@ -1,0 +1,21 @@
+name: Publish
+
+on:
+  push:
+    tags:
+      - '@jest-performance-reporter/core*'
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 10
+      - run: yarn
+      - run: yarn build
+      - run: npm publish packages/core
+      - uses: JS-DevTools/npm-publish@v1
+        with:
+          token: ${{ secrets.NPM_TOKEN }}
