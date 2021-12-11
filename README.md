@@ -1,21 +1,32 @@
-# Jest Performance report
+# Overview
 
-## Usage
+🧐 Identify slow tests during development
+📚 Create json report including the test execution times
 
-Configure Jest to process the test results by adding the following entry to the Jest config (jest.config.json) or your package.json:
+```bash
+yarn add -DE @jest-performance-reporter/core
+```
+
+# Setup
+
+Configure jest to use this reporter via the jest section in the package.json or your jest config.
 
 ```json
 {
   "reporters": [
     "default",
     [
-      "jest-performance-reporterer",
+      "@jest-performance-reporter/core",
       {
-        "pageTitle": "Test Report"
+        "errorAfterMs": 1000,
+        "warnAfterMs": 500,
+        "logLevel": "warn",
+        "maxItems": 5,
+        "createReport": true
       }
     ]
   ]
 }
 ```
 
-As you run Jest from within the terminal, a file called _performance-report.json_ will be created within your folder.
+The "default"-reporter creates the default jest output. If you don't need it, of course you can remove it.
