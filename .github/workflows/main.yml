@@ -13,8 +13,10 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 16
-      - run: yarn
-      - run: yarn build
+      - name: Setup
+        run: yarn
+      - name: Build
+        run: yarn build
       - name: Publish
         working-directory: ./packages/core
         run: npm publish
