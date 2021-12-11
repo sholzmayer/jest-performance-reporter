@@ -17,6 +17,11 @@ jobs:
         run: yarn
       - name: Build
         run: yarn build
+      # Setup .npmrc file to publish to npm
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16.x'
+          registry-url: 'https://registry.npmjs.org'
       - name: Publish
         working-directory: ./packages/core
         run: npm publish
