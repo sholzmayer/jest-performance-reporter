@@ -1,0 +1,28 @@
+{
+  "name": "@jest-performance-reporter/core",
+  "private": "true",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "start": "yarn build --watch",
+    "build": "rollup -c",
+    "test": "jest"
+  },
+  "dependencies": {
+    "chalk": "4.1.2"
+  },
+  "devDependencies": {
+    "@types/chalk": "2.2.0",
+    "concurrently": "6.4.0",
+    "lerna": "4.0.0"
+  },
+  "volta": {
+    "node": "16.13.0"
+  }
+}

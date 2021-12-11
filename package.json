@@ -1,0 +1,52 @@
+{
+  "name": "root",
+  "private": "true",
+  "version": "1.0.0",
+  "description": "Jest performance reporter",
+  "main": "packages/core/dist/index.js",
+  "unpkg": "packages/core/dist/index.js",
+  "workspaces": [
+    "packages/*"
+  ],
+  "files": [
+    "dist",
+    "style"
+  ],
+  "scripts": {
+    "build": "lerna run build --scope @jest-performance-reporter/core"
+  },
+  "author": "Simon Holzmayer",
+  "license": "MIT",
+  "engines": {
+    "node": ">=4.8.3"
+  },
+  "dependencies": {
+    "@babel/core": "7.16.0",
+    "@babel/preset-env": "7.16.4",
+    "@babel/preset-typescript": "7.16.0",
+    "@jest/console": "27.4.2",
+    "@jest/test-result": "27.4.2",
+    "@jest/types": "27.4.2",
+    "@types/jest": "27.0.3",
+    "@types/node": "16.11.11"
+  },
+  "peerDependencies": {
+    "jest": "27.x"
+  },
+  "devDependencies": {
+    "@rollup/plugin-babel": "5.3.0",
+    "@rollup/plugin-node-resolve": "13.0.6",
+    "babel-jest": "27.4.2",
+    "@typescript-eslint/eslint-plugin": "5.5.0",
+    "@typescript-eslint/parser": "5.5.0",
+    "eslint": "8.3.0",
+    "jest": "27.0.1",
+    "rollup": "2.60.2",
+    "rollup-plugin-terser": "7.0.2",
+    "prettier": "2.5.0",
+    "typescript": "4.5.2"
+  },
+  "volta": {
+    "node": "16.13.0"
+  }
+}

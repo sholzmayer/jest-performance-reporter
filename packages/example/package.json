@@ -1,0 +1,38 @@
+{
+  "name": "@jest-performance-reporter/example",
+  "private": "true",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "@jest-performance-reporter/core": "1.0.0"
+  },
+  "devDependencies": {
+    "@swc/core": "1.2.114",
+    "@swc/jest": "0.2.11",
+    "@types/jest": "27.0.3",
+    "jest": "27.4.2"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.(t|j)sx?$": [
+        "@swc/jest"
+      ]
+    },
+    "reporters": [
+      "default",
+      [
+        "@jest-performance-reporter/core",
+        {
+          "errorAfterMs": 1000,
+          "warnAfterMs": 500,
+          "logLevel": "warn",
+          "maxItems": 5,
+          "createReport": true
+        }
+      ]
+    ]
+  }
+}
