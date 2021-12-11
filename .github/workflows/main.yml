@@ -20,6 +20,5 @@ jobs:
       - name: Publish
         working-directory: ./packages/core
         run: npm publish
-      - uses: JS-DevTools/npm-publish@v1
-        with:
-          token: ${{ secrets.NPM_TOKEN }}
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
