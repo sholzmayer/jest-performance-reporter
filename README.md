@@ -8,6 +8,8 @@
 yarn add -DE @jest-performance-reporter/core
 ```
 
+![Example test run](docs/test-example.png)
+
 # Setup
 
 Configure jest to use this reporter via the jest section in the package.json or your jest config.
