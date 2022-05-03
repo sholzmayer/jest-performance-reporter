@@ -23,7 +23,7 @@ Configure jest to use this reporter via the jest section in the package.json or 
         "warnAfterMs": 500,
         "logLevel": "warn",
         "maxItems": 5,
-        "createReport": true
+        "jsonReportPath": "performance-report.json"
       }
     ]
   ]

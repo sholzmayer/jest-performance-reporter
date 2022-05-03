@@ -30,7 +30,7 @@
           "warnAfterMs": 500,
           "logLevel": "warn",
           "maxItems": 5,
-          "createReport": true
+          "jsonReportPath": "performance-report.json"
         }
       ]
     ]
