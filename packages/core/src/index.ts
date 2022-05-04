@@ -1,5 +1,5 @@
 import { AggregatedResult } from '@jest/test-result';
-import { saveJsonReport } from './reports/file';
+import { saveJsonReport } from './reports/json';
 import { LogLevelOptions } from './reports/terminal/log';
 import { extractJestReports } from './core/jest-mapping';
 import { printTestResults } from './reports/terminal';
