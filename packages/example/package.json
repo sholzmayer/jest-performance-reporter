@@ -30,7 +30,8 @@
           "warnAfterMs": 500,
           "logLevel": "warn",
           "maxItems": 5,
-          "jsonReportPath": "performance-report.json"
+          "jsonReportPath": "performance-report.json",
+          "csvReportPath": "performance-report.csv"
         }
       ]
     ]

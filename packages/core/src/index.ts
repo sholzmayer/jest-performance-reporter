@@ -3,17 +3,19 @@ import { saveJsonReport } from './reports/json';
 import { LogLevelOptions } from './reports/terminal/log';
 import { extractJestReports } from './core/jest-mapping';
 import { printTestResults } from './reports/terminal';
+import { saveCsvReport } from './reports/csv';
 
-const setupAndRun = (data: {
+const setupAndRun = async (data: {
   testData: AggregatedResult;
-  options: { jsonReportPath?: string } & LogLevelOptions;
+  options: { jsonReportPath?: string; csvReportPath?: string } & LogLevelOptions;
 }) => {
   const { testData, options } = data;
-  const { warnAfterMs, errorAfterMs, logLevel, maxItems, jsonReportPath } = options;
+  const { warnAfterMs, errorAfterMs, logLevel, maxItems, jsonReportPath, csvReportPath } = options;
   const reports = extractJestReports(testData);
 
   printTestResults(reports, { errorAfterMs, warnAfterMs, logLevel, maxItems });
   jsonReportPath && saveJsonReport(reports, jsonReportPath);
+  csvReportPath && (await saveCsvReport(reports, csvReportPath));
 };
 
 export default function JestPerformanceReporter(_, options: any) {

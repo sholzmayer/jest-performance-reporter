@@ -2,7 +2,7 @@
 
 🧐 Identify slow tests during development
 
-📚 Create json report including the test execution times
+📚 Create json or csv report including the test execution times
 
 ```bash
 yarn add -DE @jest-performance-reporter/core
@@ -25,7 +25,8 @@ Configure jest to use this reporter via the jest section in the package.json or 
         "warnAfterMs": 500,
         "logLevel": "warn",
         "maxItems": 5,
-        "jsonReportPath": "performance-report.json"
+        "jsonReportPath": "performance-report.json",
+        "csvReportPath": "performance-report.csv"
       }
     ]
   ]

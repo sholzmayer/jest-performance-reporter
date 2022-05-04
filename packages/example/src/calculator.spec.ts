@@ -9,7 +9,7 @@ describe('Calculator', () => {
     expect(sum(2, 3)).toEqual(5);
   });
 
-  it('should sum 8+0 timeout', async () => {
+  it('should sum 8+0, with timeout', async () => {
     await timer(3000);
     expect(sum(8, 0)).toEqual(8);
   });
