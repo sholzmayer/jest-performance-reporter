@@ -1,13 +1,13 @@
 {
   "name": "@jest-performance-reporter/example",
   "private": "true",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "license": "MIT",
   "scripts": {
     "test": "jest"
   },
   "dependencies": {
-    "@jest-performance-reporter/core": "^2.0.0"
+    "@jest-performance-reporter/core": "^2.1.0"
   },
   "devDependencies": {
     "@swc/core": "1.2.114",

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/sholzmayer/jest-performance-reporter/compare/@jest-performance-reporter/example@2.0.0...@jest-performance-reporter/example@2.1.0) (2022-05-04)
+
+
+### Features
+
+* support csv report ([1b9cecb](https://github.com/sholzmayer/jest-performance-reporter/commit/1b9cecb3ba783d8cc767a5bbdbe3012484c15804))
+
+
+
+
+
 # [2.0.0](https://github.com/sholzmayer/jest-performance-reporter/compare/@jest-performance-reporter/example@1.0.8...@jest-performance-reporter/example@2.0.0) (2022-05-03)
 
 
