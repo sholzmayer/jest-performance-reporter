@@ -15,6 +15,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "@jest/reporters": "28.1.0",
     "chalk": "4.1.2",
     "csv-writer": "1.6.0"
   },

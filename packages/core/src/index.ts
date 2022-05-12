@@ -1,9 +1,9 @@
-import { AggregatedResult } from '@jest/test-result';
-import { saveJsonReport } from './reports/json';
-import { LogLevelOptions } from './reports/terminal/log';
+import { AggregatedResult, Reporter, TestContext } from '@jest/reporters';
 import { extractJestReports } from './core/jest-mapping';
-import { printTestResults } from './reports/terminal';
 import { saveCsvReport } from './reports/csv';
+import { saveJsonReport } from './reports/json';
+import { printTestResults } from './reports/terminal';
+import { LogLevelOptions } from './reports/terminal/log';
 
 const setupAndRun = async (data: {
   testData: AggregatedResult;
@@ -18,13 +18,17 @@ const setupAndRun = async (data: {
   csvReportPath && (await saveCsvReport(reports, csvReportPath));
 };
 
-export default class JestPerformanceReporter {
+export default class JestPerformanceReporter implements Reporter {
   constructor(_: any, public reporterOptions: any) {}
 
-  onRunComplete(testContexts: any, results: AggregatedResult) {
+  onRunComplete(testContexts: Set<TestContext>, results: AggregatedResult) {
     setupAndRun({
       testData: results,
       options: this.reporterOptions,
     });
   }
+
+  onRunStart() {}
+
+  getLastError() {}
 }
