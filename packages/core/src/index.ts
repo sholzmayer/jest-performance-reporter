@@ -18,10 +18,13 @@ const setupAndRun = async (data: {
   csvReportPath && (await saveCsvReport(reports, csvReportPath));
 };
 
-export default function JestPerformanceReporter(_, options: any) {
-  this.onRunComplete = (_: any, testData: AggregatedResult) =>
+export default class JestPerformanceReporter {
+  constructor(_: any, public reporterOptions: any) {}
+
+  onRunComplete(testContexts: any, results: AggregatedResult) {
     setupAndRun({
-      testData,
-      options,
+      testData: results,
+      options: this.reporterOptions,
     });
+  }
 }
