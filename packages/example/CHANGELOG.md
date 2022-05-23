@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.1](https://github.com/sholzmayer/jest-performance-reporter/compare/@jest-performance-reporter/example@2.1.0...@jest-performance-reporter/example@2.1.1) (2022-05-23)
+
+
+### Bug Fixes
+
+* avoid infinite runs on watch mode ([d25a285](https://github.com/sholzmayer/jest-performance-reporter/commit/d25a28594808ab8f4cf4077806dadd8dea125c0c))
+
+
+
+
+
 # [2.1.0](https://github.com/sholzmayer/jest-performance-reporter/compare/@jest-performance-reporter/example@2.0.0...@jest-performance-reporter/example@2.1.0) (2022-05-04)
 
 
