@@ -8,7 +8,7 @@
 yarn add -DE @jest-performance-reporter/core
 ```
 
-![Example test run](docs/test-example.png)
+![Example test run](https://raw.githubusercontent.com/sholzmayer/jest-performance-reporter/c766d041e908170f968a33d0c2b00cabfb111d4f/docs/test-example.png)
 
 # Setup
 
