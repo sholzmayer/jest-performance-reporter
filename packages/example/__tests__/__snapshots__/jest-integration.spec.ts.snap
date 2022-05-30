@@ -1,6 +1,36 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`that the json report works fine 1`] = `
+exports[`that the csv report works 1`] = `
+Array [
+  Object {
+    "DURATION": 0,
+    "NAME": "Fruits should have a raspberry",
+    "STATUS": "passed",
+  },
+  Object {
+    "DURATION": 500,
+    "NAME": "Fruits should have an apple",
+    "STATUS": "passed",
+  },
+  Object {
+    "DURATION": 0,
+    "NAME": "should have a raspberry without describe",
+    "STATUS": "passed",
+  },
+  Object {
+    "DURATION": 0,
+    "NAME": "Calculator should sum 2+3",
+    "STATUS": "passed",
+  },
+  Object {
+    "DURATION": 3000,
+    "NAME": "Calculator should sum 8+0, with timeout",
+    "STATUS": "passed",
+  },
+]
+`;
+
+exports[`that the json report works 1`] = `
 Array [
   Object {
     "duration": 0,
