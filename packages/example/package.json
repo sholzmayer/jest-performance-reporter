@@ -4,7 +4,9 @@
   "version": "2.1.2",
   "license": "MIT",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "pretest:integration": "yarn test src/*.spec.ts",
+    "test:integration": "jest __tests__/jest-integration.spec.ts --reporters='default'"
   },
   "dependencies": {
     "@jest-performance-reporter/core": "^2.1.2"
