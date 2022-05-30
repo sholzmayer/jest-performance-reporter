@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`that the json report works fine 1`] = `
+Array [
+  Object {
+    "duration": 0,
+    "fullName": "Fruits should have a raspberry",
+    "status": "passed",
+  },
+  Object {
+    "duration": 500,
+    "fullName": "Fruits should have an apple",
+    "status": "passed",
+  },
+  Object {
+    "duration": 0,
+    "fullName": "should have a raspberry without describe",
+    "status": "passed",
+  },
+  Object {
+    "duration": 0,
+    "fullName": "Calculator should sum 2+3",
+    "status": "passed",
+  },
+  Object {
+    "duration": 3000,
+    "fullName": "Calculator should sum 8+0, with timeout",
+    "status": "passed",
+  },
+]
+`;
