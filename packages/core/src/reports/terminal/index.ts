@@ -10,7 +10,7 @@ const formatTime = (durationInMs: number) => formator.format(durationInMs / 1000
 
 export const printTestResults = (testResults: TestResult[], logOptions: LogLevelOptions) => {
   const { logLevel, maxItems = 5 } = logOptions;
-  const organizedTestResults = testResults
+  const organizedTestResults = [...testResults]
     .sort((a, b) => b.duration - a.duration)
     .slice(0, maxItems);
 
