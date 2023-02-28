@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.3](https://github.com/sholzmayer/jest-performance-reporter/compare/@jest-performance-reporter/core@2.1.2...@jest-performance-reporter/core@2.1.3) (2023-02-28)
+
+
+### Bug Fixes
+
+* create directory for reports ([c98b3b0](https://github.com/sholzmayer/jest-performance-reporter/commit/c98b3b0c09a8b779b8640fc9a8bf40e8759386b7)), closes [#4](https://github.com/sholzmayer/jest-performance-reporter/issues/4)
+
+
+
+
+
 ## [2.1.2](https://github.com/sholzmayer/jest-performance-reporter/compare/@jest-performance-reporter/core@2.1.1...@jest-performance-reporter/core@2.1.2) (2022-05-30)
 
 

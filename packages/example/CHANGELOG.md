@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.3](https://github.com/sholzmayer/jest-performance-reporter/compare/@jest-performance-reporter/example@2.1.2...@jest-performance-reporter/example@2.1.3) (2023-02-28)
+
+**Note:** Version bump only for package @jest-performance-reporter/example
+
+
+
+
+
 ## [2.1.2](https://github.com/sholzmayer/jest-performance-reporter/compare/@jest-performance-reporter/example@2.1.1...@jest-performance-reporter/example@2.1.2) (2022-05-30)
 
 **Note:** Version bump only for package @jest-performance-reporter/example
