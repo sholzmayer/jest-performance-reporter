@@ -1,6 +1,7 @@
 {
   "name": "@jest-performance-reporter/core",
   "private": false,
+  "license": "MIT",
   "version": "2.1.2",
   "main": "dist/index.js",
   "module": "dist/index.js",

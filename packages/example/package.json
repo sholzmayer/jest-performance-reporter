@@ -9,7 +9,7 @@
     "test:integration": "jest __tests__/jest-integration.spec.ts --reporters='default'"
   },
   "dependencies": {
-    "@jest-performance-reporter/core": "^2.1.2"
+    "@jest-performance-reporter/core": "*"
   },
   "devDependencies": {
     "@swc/core": "1.2.114",
